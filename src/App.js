@@ -11,10 +11,13 @@ export class App extends Component {
     return (
       <div>
         <nav>
-          <Link to="/Page1">Page1</Link>
-          <Link to="/Page2">Page2</Link>
+          <Link to="/page1">Page1</Link>
+          <Link to="/page2">Page2</Link>
         </nav>
         <Switch>
+          <Route exact path="/">
+            <Page1 />
+          </Route>
           <Route path="/Page1">
             <Page1 />
           </Route>
